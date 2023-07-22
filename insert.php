@@ -3,7 +3,7 @@
 $name=$_POST['name'];
 $address=$_POST['address'];
 $phone=$_POST['phone'];
-//$gender=$_POST['gender'];
+$gender=$_POST['gender'];
 $faculty=$_POST['faculty'];
 $remarks=$_POST['remarks'];
 $server="localhost";
