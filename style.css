@@ -14,24 +14,25 @@ body {
 
     /*background-color: skyblue;*/
     width: 50%;
-    margin-left: 390px;
-
+    margin-left: 480px;
     margin-top: 20px;
 }
 
 h1 {
-    background: rgb(148, 187, 233);
-    background: linear-gradient(90deg, rgba(148, 187, 233, 1) 0%, rgba(238, 174, 202, 1) 100%);
-    padding: 10px;
-    text-align: center;
+    width: 100%;
+   /* background: rgb(148, 187, 233);
+    background: linear-gradient(90deg, rgba(148, 187, 233, 1) 0%, rgba(238, 174, 202, 1) 100%);*/
+   /* padding: 10px;*/
+    /*text-align: center;*/
     border-radius: 15px;
-    font-size: 30px;
+    font-size: 28px;
     color: rgb(34, 34, 34);
     font-style: oblique;
 
 }
 
 .info {
+    width: 75%;;
     background-color: rgb(255, 255, 255);
     padding: 30px;
     border-radius: 15px;
@@ -45,14 +46,14 @@ h1 {
 
 
 input[type=text] {
-    width: 50%;
+    width: 100%;
     padding: 10px;
     border-radius: 6px;
     border: 1px solid hsl(246, 25%, 77%);
 }
 
 input[type=tel] {
-    width: 50%;
+    width: 100%;
     padding: 10px;
     border-radius: 6px;
     border: 1px solid hsl(246, 25%, 77%);
@@ -72,12 +73,14 @@ input[type=submit] {
 }
 
 select {
+    width: 18%;
     padding: 7px;
     border: 1px solid hsl(246, 25%, 77%);
     border-radius: 6px;
 }
 
 textarea{
+    width: 100%;
     padding: 10px;
     border-radius: 6px;
     border: 1px solid hsl(246, 25%, 77%);
@@ -85,18 +88,22 @@ textarea{
 
 .sub{
    /* background-color: yellow;*/
-    width: 50%;
-
+    width: 100%;
 }
 
 input[type=submit]{
-    font-family: 'Poppins';
-    font-style: bold;
+
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
     background: rgb(148, 187, 233);
     background: linear-gradient(90deg, rgba(148, 187, 233, 1) 0%, rgba(238, 174, 202, 1) 100%);
+    cursor:crosshair;
    /* background-color: red;*/
+}
 
+input[value=Register]{
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight:900;
 }

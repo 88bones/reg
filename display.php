@@ -6,13 +6,13 @@ $db="reg";
 //link css
 $stylesheet_url = "style2.css";
         	echo "<link rel='stylesheet' href='{$stylesheet_url}'>";
-
 $conn=mysqli_connect($server,$username,$password,$db);
 $sql="SELECT * FROM `register` WHERE 1";
 $row=mysqli_query($conn,$sql);
-echo '<div class="data">
-        <div class="data2">
-        <table border=2px solid cellspacing=1>
+echo '
+    <body>
+        <div class="data">
+        <table border=0 px solid cellspacing=1>
         <tr>
         <th>Name</th>
         <th>Address</th>
@@ -21,8 +21,9 @@ echo '<div class="data">
         <th>Faculty</th>
         <th>Remarks</th>
         </tr>
-    </div>
-</div>';
+        </div>
+        </body>
+        ';
 while($result=mysqli_fetch_assoc($row)){
     echo '<tr>
                 <td>'.$result['Name'].'</td>
@@ -34,4 +35,6 @@ while($result=mysqli_fetch_assoc($row)){
     echo '<br>';
 }
 echo '</table>';
+
+
 ?>
