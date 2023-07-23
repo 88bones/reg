@@ -11,10 +11,16 @@ $username="root";
 $password="";
 $db="reg";
 $conn=mysqli_connect($server,$username,$password,$db);
-if(isset($conn)){
+/*if(isset($conn)){
     echo 'connection success "localhost/bca/index.php"';
 }else{
     echo 'connectuon no';
+}*/
+$sql="INSERT INTO `register` (`Name`, `Address`, `Phone Num`, `Gender`, `Faculty`, `Remarks`) VALUES ('$name', '$address', '$phone', '$gender', '$faculty', '$remarks')";
+$result=mysqli_query($conn,$sql);
+if(isset($result)){
+    echo "Data Inserted successfully";
 }
+
 
 ?>
