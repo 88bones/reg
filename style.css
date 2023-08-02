@@ -73,11 +73,13 @@ input[type=submit] {
 }
 
 select {
-    width: 18%;
-    padding: 7px;
+    width: 100%;
+    padding: 8px;
     border: 1px solid hsl(246, 25%, 77%);
     border-radius: 6px;
+    color: grey;
 }
+
 
 textarea{
     width: 100%;
